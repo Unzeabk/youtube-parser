@@ -1,0 +1,22 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore environment file with sensitive data
+.env
+
+# Ignore virtual environment folder if you create one
+venv/
+env/
+
+# Ignore database-related files
+*.sqlite3
+*.db
+
+# Ignore logs, if any
+logs/
+*.log
+
+# Ignore IDE/editor-specific folders
+.vscode/
+.idea/
