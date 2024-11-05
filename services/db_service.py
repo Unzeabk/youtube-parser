@@ -7,7 +7,7 @@ class DatabaseService:
         self.db = Database(db_url)
         self.session = self.db.get_session()
 
-    def add_channel_if_not_exists(self, channel_info):
+    def add_channel(self, channel_info):
         channel = self.session.query(Channel).filter_by(channel_id=channel_info["channel_id"]).first()
         if not channel:
             channel = Channel(**channel_info)

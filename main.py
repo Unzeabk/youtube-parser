@@ -17,7 +17,7 @@ def main():
     for video_id in video_ids:
         video_info, channel_info, comments = youtube_service.get_video_data(video_id)
         
-        db_service.add_channel_if_not_exists(channel_info)
+        db_service.add_channel(channel_info)
         db_service.add_video(video_info)
         db_service.add_comments(video_id, comments)
 
